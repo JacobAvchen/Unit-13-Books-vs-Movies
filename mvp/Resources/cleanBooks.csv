@@ -1,4 +1,4 @@
-bookID,title,authors,average_rating,ratings_count,text_reviews_count,publication_date,publisher
+book_id,title,authors,average_rating,ratings_count,text_reviews_count,publication_date,publisher
 1,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling/Mary GrandPré,4.57,2095690,27591,9/16/2006,Scholastic Inc.
 2,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling/Mary GrandPré,4.49,2153167,29221,9/1/2004,Scholastic Inc.
 4,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,4.42,6333,244,11/1/2003,Scholastic

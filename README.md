@@ -9,20 +9,20 @@ The following processes were completed using BeautifulSoup and Pandas’ built-i
 3.	title.ratings.tsv.gz - source: IMDB Data Files
 4.	Wikipedia’s list of fiction works with feature film adaptations using BeautifulSoup - source: Wikipedia
 ## TRANSFORM:
--	Books
+1.	Books
   -	Remove unnecessary columns
   -	Clean titles to standard format with no parentheses
   -	Change column names to standard underscore notation
--	Movies
+1.	Movies
   -	Remove unnecessary columns
   -	Remove entries that are not movies, ie: shorts, tv shows, etc.
   -	Remove entries with no release year, or that have not been released yet
   -	Remove entries with no entry in ratings_df via the tconst column
   -	Change column names to standard underscore notation
--	Ratings
+1.	Ratings
   -	Remove entries with no entry in movie_df via the tconst column
   -	Change column names to standard underscore notation
--	Wiki
+1.	Wiki
   -	Create single A-Z dataframe from 4 separate alphabetized tables
   -	Clean book titles to standard format with no parentheses
   -	Change column names to standard underscore notation

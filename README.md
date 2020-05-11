@@ -9,23 +9,23 @@ The following processes were completed using BeautifulSoup and Pandas’ built-i
 3.	title.ratings.tsv.gz - source: IMDB Data Files
 4.	Wikipedia’s list of fiction works with feature film adaptations using BeautifulSoup - source: Wikipedia
 ## TRANSFORM:
-1.	Books
-  2.	Remove unnecessary columns
-  2.	Clean titles to standard format with no parentheses
-  2.	Change column names to standard underscore notation
-1.	Movies
-  3.	Remove unnecessary columns
-  3.	Remove entries that are not movies, ie: shorts, tv shows, etc.
-  3.	Remove entries with no release year, or that have not been released yet
-  3.	Remove entries with no entry in ratings_df via the tconst column
-  3.	Change column names to standard underscore notation
-1.	Ratings
-  4.	Remove entries with no entry in movie_df via the tconst column
-  4.	Change column names to standard underscore notation
-1.	Wiki
-  5.	Create single A-Z dataframe from 4 separate alphabetized tables
-  5.	Clean book titles to standard format with no parentheses
-  5.	Change column names to standard underscore notation
+-	Books
+  -	Remove unnecessary columns
+  -	Clean titles to standard format with no parentheses
+  -	Change column names to standard underscore notation
+-	Movies
+  -	Remove unnecessary columns
+  -	Remove entries that are not movies, ie: shorts, tv shows, etc.
+  -	Remove entries with no release year, or that have not been released yet
+  -	Remove entries with no entry in ratings_df via the tconst column
+  -	Change column names to standard underscore notation
+-	Ratings
+  -	Remove entries with no entry in movie_df via the tconst column
+  -	Change column names to standard underscore notation
+-	Wiki
+  -	Create single A-Z dataframe from 4 separate alphabetized tables
+  -	Clean book titles to standard format with no parentheses
+  -	Change column names to standard underscore notation
 
 ## LOAD:
 Before we loaded the data into PostgreSQL, we had to create the books_movies_db on our local computers in pgAdmin4 to store it. We loaded the data into PostgreSQL using SQLAlchemy and Pandas’ to_sql function to create tables for each dataframe in books_movies_db and load the data in at once. Below are diagrams of the relations between the tables on quickdatabasediagrams.com and a visualization of the entire ETL process.
